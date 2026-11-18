@@ -13,6 +13,10 @@
             <li class="nav-item">
               <?= anchor('smazat', 'Smazat data', ['class' => 'nav-link']) ?>
             </li>
+            </li>
+            <li class="nav-item">
+              <?= anchor('mapa', 'Mapa', ['class' => 'nav-link']) ?>
+            </li>
           </ul>
         </div>
       </div> 

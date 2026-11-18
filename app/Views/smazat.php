@@ -14,7 +14,9 @@
         <?= csrf_field() ?>
 
         <label>Stanice:</label>
+        
         <select name="station" required>
+            <option value="" selected disabled>Vyberte stanici</option>
             <?php foreach ($stanice as $row): ?>
                 <option value="<?= $row->S_ID ?>"><?= $row->place ?></option>
             <?php endforeach; ?>
@@ -29,7 +31,6 @@
 
         <label>Rok:</label>
         <input type="number" name="year" min="2000" max="2050" required>
-
         <button class="btn btn-danger" type="submit">Smazat</button>
     </form>
 </div>

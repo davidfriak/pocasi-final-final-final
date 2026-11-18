@@ -15,3 +15,4 @@ $routes->get("mereni/(:num)", "Main::mereni/$1");
 $routes->get("informace/(:num)", "Main::informace/$1");
 $routes->get("smazat", "Main::smazat");
 $routes->post("smazat/smazat", "Main::smazatData");
+$routes->get("mapa", "Main::mapa");

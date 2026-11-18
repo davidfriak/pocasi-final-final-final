@@ -78,6 +78,10 @@ class Main extends BaseController
             ->with('success', 'Data byla smazána.');
     }
     
+    public function mapa() {
+        $data["station"] = $this->station->findAll();
+        echo view("mapa", $data);
+    }
 
 
 
